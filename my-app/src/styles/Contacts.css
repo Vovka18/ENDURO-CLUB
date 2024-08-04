@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+.contacts{
+    width: 100%;
+    height: 1366px;
+    color: black;
+    padding: 109px 200px 40px 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contacts .headline{
+    width: 100%;
+    height: 50px;
+}
+.contacts .headline h1{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: black;
+}
+.chois-moto{
+    width: 100%;
+    height: 471px;
+    /* height: 500px; */
+}
+.chois-moto .text{
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+.chois-moto .moto-menu{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.chois-moto .moto{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    transition: .2s;
+}
+.chois-moto .moto:hover{
+    background: #ff521dc7;
+    box-shadow: 0px 0px 20px rgb(255, 82, 29);
+}
+.moto-menu .moto img{
+    width: 80%;
+}
+.moto-menu .moto .headline-moto{
+    font-family: "Bruno Ace", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: black;
+}
+
+.inputs{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-name,  .input-phone{
+    width: 50%;
+    height: 85px;
+    border: 2px solid #747474;
+    background: #efefef;
+    outline: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    padding: 15px;
+}
+.input-phone{
+    border-left: 0px;
+}
+.input-text{
+    width: 100%;
+    height: 270px;
+    border: 2px solid #747474;
+    background: #efefef;
+    outline: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    padding: 15px;
+}
+.inputs input::placeholder, .inputs textarea::placeholder{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.send-form{
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 5px;
+    border: 0px;
+    background: #FF521D;
+    transition: .2s;
+}
+.send-form:hover{
+    background: #222222;
+}
+.contacts .subtext{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+.bold-phone{
+    font-weight: 600;
+    color: black;
+}
+
+
+@media screen and (max-width: 1650px) {
+    .contacts{
+        padding: 60px 80px 40px 80px;
+        height: 1250px;
+    }
+    .moto-menu .moto img{
+        width: 70%;
+    }
+    .moto-menu .moto .headline-moto{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .contacts{
+        height: 1000px;
+    }
+    .contacts .headline{
+        margin-bottom: 20px;
+    }
+    .contacts .headline h1{
+        font-size: 30px;
+    }
+    .chois-moto .text{
+        font-size: 20px;
+    }
+    .chois-moto .moto-menu{
+        height: 300px;
+    }
+    .moto-menu .moto .headline-moto{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .contacts{
+        height: 2900px;
+    }
+    .chois-moto{
+        height: 2000px;
+    }
+    .chois-moto .moto-menu{
+        height: 2000px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .chois-moto .moto{
+        width: 100%;
+    }
+    .moto-menu .moto img{
+        width: 50%;
+    }
+    .moto-menu .moto .headline-moto{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .moto-menu .moto img{
+        width: 80%;
+    }
+    .moto-menu .moto .headline-moto{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .moto-menu .moto .headline-moto{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .contacts{
+        height: 2400px;
+        padding: 30px 30px 40px 30px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contacts .headline{
+        height: 150px;
+    }
+    .contacts .headline h1{
+        font-size: 25px;
+    }
+    .moto-menu .moto .headline-moto{
+        font-size: 40px;
+    }
+    .chois-moto{
+        height: 1250px;
+    }
+    .contacts .moto-menu{
+        height: 1100px;
+    }
+    .inputs{
+        height: auto;
+    }
+    .input-name, .input-phone{
+        width: 100%;
+    }
+    .input-phone{
+        border-left: 2px solid #747474;
+        border-top: 0px;
+    }
+    .moto-menu .moto img{
+        width: 90%;
+    }
+    .contacts .subtext{
+        height: 50px;
+        padding-top: 40px;
+    }
+}

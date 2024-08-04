@@ -1,0 +1,128 @@
+.conditions{
+    width: 100%;
+    height: 580px;
+    background: url("../img/conditions.jpg") no-repeat 90% center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.block-info{
+    width: 938px;
+    height: 405px;
+    border-radius: 70px;
+    background: rgba(195, 195, 195, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 17px 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;    
+}
+.conditions .headline{
+    width: 100%;
+    display: flex;
+}
+
+.conditions .headline h1{
+    font-weight: 800;
+    font-size: 96px;
+    letter-spacing: 10px;
+}
+.conditions .headline img{
+    margin-left: 20px;
+}
+.conditions ul{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.conditions ul li{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .conditions{
+        justify-content: center;
+        padding: 0px 40px;
+    }
+    .block-info{
+        padding: 25px 58px;
+        justify-content: space-around;
+    }
+    .conditions .headline h1{
+        font-weight: 800;
+        font-size: 64px;
+        letter-spacing: 10px;
+    }
+    .conditions ul li{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .conditions ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conditions{
+        padding: 0px 20px;
+    }
+    .conditions .headline h1{
+        font-size: 58px;
+    }
+    .conditions ul li{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .conditions{
+        padding: 0px 0px;
+    }
+    .block-info{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 50px 40px;
+    }
+    .conditions .headline h1{
+        font-size: 60px;
+    }
+    .conditions .headline img{
+        width: 20%;
+    }
+    .conditions ul li{
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .conditions{
+        padding: 0px 0px;
+    }
+    .block-info{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 70px 25px;
+    }
+    .conditions .headline h1{
+        font-size: 45px;
+    }
+    .conditions .headline img{
+        width: 15%;
+    }
+    .conditions ul li{
+        font-size: 15px;
+    }
+}
